@@ -11,7 +11,11 @@ $(document).ready( function(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+	recipesArray.forEach(function(e){
+		if(e.attr('highlighted', 'true'){
+			renderRecipe(e)
+		}
+	})
 }
 
 /*
