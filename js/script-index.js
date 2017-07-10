@@ -1,13 +1,13 @@
 $(document).ready( function(){
 
 	function printNews(){
-		$('.news').html('NUEVAS NOTICIAS');
+		$('.news').append('<p class="apendice">NUEVAS NOTICIAS</p>');
 	}
 
 	printNews();
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
-	renderHighlightedRecipes(recipesArray);
+	/*renderHighlightedRecipes(recipesArray);*/
 
 });
 
@@ -16,11 +16,7 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
-function renderHighlightedRecipes(recipesArray) {
-	recipesArray.forEach(function(e){
-		if(e.attr('highlighted', 'true'){
-			renderRecipe(e)
-		});
+/*function renderHighlightedRecipes(recipesArray) {
 	}
 
 /*
