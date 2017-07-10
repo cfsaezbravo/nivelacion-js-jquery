@@ -1,5 +1,11 @@
 $(document).ready( function(){
 
+	function printNews(){
+		$('.news').html('NUEVAS NOTICIAS');
+	}
+
+	printNews();
+
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
@@ -14,9 +20,8 @@ function renderHighlightedRecipes(recipesArray) {
 	recipesArray.forEach(function(e){
 		if(e.attr('highlighted', 'true'){
 			renderRecipe(e)
-		}
-	})
-}
+		});
+	}
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
